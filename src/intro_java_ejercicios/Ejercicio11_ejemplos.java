@@ -54,6 +54,10 @@ public class Ejercicio11_ejemplos {
     }
     
     private static boolean isPhraseValid(String input){
-        return input.matches(".*\\.$");
+        return input.matches(".*\\."); 
+        // el "." indica cualquier caracter, 
+        // el "*" indica que no importa la cantidad, 
+        // la "\\" permite salir del primer "."
+        // el ultimo "." indica que debe terminar en "."
     }
 }

@@ -39,6 +39,6 @@ public class Ejercicio12 {
     }
     
     private static boolean isValidInput(String input){
-        return input.matches("X.{3}O");
+        return input.matches("X.{3}O"); // "el .{n} indica que los proximos 3 caracteres pueden ser cualquiera"
     }
 }
