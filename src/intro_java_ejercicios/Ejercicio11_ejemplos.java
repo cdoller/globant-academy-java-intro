@@ -29,28 +29,11 @@ public class Ejercicio11_ejemplos {
             System.out.println("Vuelve a ingresar la frase por favor");
             frase = leer.nextLine();
         }
-        
-        for (int i = 0; i < frase.length(); i++) {
-            fraseCodificada = fraseCodificada.concat(codificateLetter(frase.substring(i, i+1)));
-        }
-        System.out.println(fraseCodificada);
+        System.out.println(codificatePhrase(frase));
     }
     
-    private static String codificateLetter(String letter) {
-        switch (letter) {
-            case "a":
-                return "@";
-            case "e":
-                return "#";
-            case "i":
-                return "$";
-            case "o":
-                return "%";
-            case "u":
-                return "*";
-            default:
-                return letter;
-        }
+    private static String codificatePhrase(String phrase) {
+        return phrase.replace("a","@").replace("e","#").replace("i","$").replace("o","%").replace("u", "*");
     }
     
     private static boolean isPhraseValid(String input){
