@@ -21,7 +21,7 @@ public class Ejercicio18 {
                 if (matrix[i][j] >= 0) {
                     System.out.print(" ");
                 }
-                System.out.print(matrix[i][j] + " ");
+                System.out.print(matrix[i][j] + "  ");
             }
             System.out.println("");
         }
@@ -41,7 +41,7 @@ public class Ejercicio18 {
                 if (matrix[j][i] >= 0) {
                     System.out.print(" ");
                 }
-                System.out.print(matrix[j][i] + " ");
+                System.out.print(matrix[j][i] + "  ");
             }
             System.out.println("");
         }
