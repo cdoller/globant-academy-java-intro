@@ -9,7 +9,7 @@ public class Ejercicio18 {
 
     public static void main(String[] args) {
         int[][] matrix = new int[4][4];
-        loadMatrix(matrix);
+        loadMatrix(matrix, 9, 1);
         printMatrix(matrix);
         System.out.println("");
         printTransposeMatrix(matrix);
@@ -27,10 +27,10 @@ public class Ejercicio18 {
         }
     }
 
-    public static void loadMatrix(int[][] matrix) {
+    public static void loadMatrix(int[][] matrix, int max, int min) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-                matrix[i][j] = (int) (Math.random() * (9 - (-9) + 1)) + (-9);
+                matrix[i][j] = (int) (Math.random() * (max - min + 1) + min);
             }
         }
     }

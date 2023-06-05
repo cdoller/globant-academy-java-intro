@@ -16,7 +16,7 @@ public class Ejercicio19 {
         int[][] matrix = new int[3][3];
 
         do {
-            loadMatrix(matrix);
+            loadMatrix(matrix, 10, -10);
         } while (!isAntiSymmetric(matrix));
         
         printMatrix(matrix);
