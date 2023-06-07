@@ -21,7 +21,6 @@ public class Ejercicio11_ejemplos {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        String fraseCodificada = "";
         
         String frase = leer.nextLine();
         while(!isPhraseValid(frase)){
