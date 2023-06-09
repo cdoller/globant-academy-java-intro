@@ -14,7 +14,7 @@ public class Ejercicio21 {
     public static void main(String[] args){
         int[][] matrixM = new int[10][10];
         int[][] matrixP = new int[2][2];        
-        int intentos = 0 , max = 20, min = 10; 
+        int intentos = 0 , max = 20, min = 1; 
         do{
             loadMatrix(matrixM, max, min);
             loadMatrix(matrixP, max, min);
